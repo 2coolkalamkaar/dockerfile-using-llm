@@ -51,5 +51,4 @@ kubectl exec -it deployment/ollama -- ollama run docker-generator "Python"
 - `deployment/ollama`: Instead of finding the exact Pod name (like `ollama-7d9f8c...`), you can just target the deployment. Kubernetes will pick the running Pod for you.
 - `ollama run docker-generator`: This calls the custom model we defined in your ConfigMap.
 - `"Python"`: This is the prompt. Since your `Modelfile` has the instructions, the model sees "Python" and knows exactly what to do based on the system prompt.
-# dockerfile-using-llm
-# dockerfile-using-llm
+
